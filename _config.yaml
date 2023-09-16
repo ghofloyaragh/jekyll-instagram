@@ -1,0 +1,3 @@
+collections:
+  companies:
+    output: true

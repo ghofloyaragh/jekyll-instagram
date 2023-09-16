@@ -1,0 +1,62 @@
+- id: 0
+  name: ISEO Gera 3000 cylinder
+  images:
+    -
+      path: /assets/images/iseo/0/1-main image.jpg
+      alt: iseo gera 3000 main image ghoflkeyvan
+    -
+      path: /assets/images/iseo/0/2-gera 3000 Description copy.jpg
+      alt: iseo gera 3000 description ghoflkeyvan
+    -
+      path: /assets/images/iseo/0/3-gera 3000 propeties.jpg
+      alt: iseo gera 3000 properties ghoflkeyvan
+    -
+      path: /assets/images/iseo/0/4-gera 3000 interior 3d view.jpg
+      alt: iseo gera 3000 interior 3d view ghoflkeyvan
+    -
+      path: /assets/images/iseo/0/5-gera 3000 standards.jpg
+      alt: iseo gera 3000 standards and cerifications ghoflkeyvan
+
+- id: 1
+  name: ISEO Gera ws plus cylinder
+  images:
+    -
+      path: /assets/images/iseo/1/1-gera ws main image.jpg
+      alt: iseo gera ws plus ghoflkeyvan
+    -
+      path: 2-gera ws Description.jpg
+      alt: iseo gera ws plus description ghoflkeyvan
+    -
+      path: 3-gera ws propeties.jpg
+      alt: iseo gera ws plus properties ghoflkeyvan
+    -
+      path: 4-gera ws interior 3d view.jpg
+      alt: iseo gera ws plus interior 3d view ghoflkeyvan
+    -
+      paht: 5-gera ws standards copy.jpg
+      alt: iseo gera ws plus standards and certifications ghoflkeyvan
+
+- id: 2
+  name: ISEO R500 SPI cylinder
+  images:
+    -
+      path: /assets/images/iseo/2/1- r500 spi photoshop.jpg
+      alt: iseo r500 spi cylinder ghoflkeyvan
+    -
+      path: 2- r500 spi Description.jpg
+      alt: iseo r500 spi description ghoflkeyvan
+    -
+      path: 3-R500 propeties copy.jpg
+      alt: iseo r500 spi properties ghoflkeyvan
+    -
+      path: 4-r500 spi Bold properties copy.jpg
+      alt: iseo r500 spi features ghoflkeyvan
+    -
+      path: 5-R500 interior 3d view copy.jpg
+      alt: iseo r500 spi 3d interior view ghoflkeyvan
+    -
+      path: 6-r500 spi Circles copy.jpg
+      alt: iseo r500 spi anti. ghoflkeyvan
+    -
+      path: 7-R500 standards copy.jpg
+      alt: iseo r500 spi standards and certifications ghoflkeyvan

@@ -1,0 +1,77 @@
+.current {
+  color: cadetblue !important;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.indent-root {
+  margin: 0 250px;
+}
+
+#post-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.post-row {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  width: 100%;
+}
+
+.post-obj {
+  display: block;
+  position: relative;
+  width: 33.3%;
+  margin: 10px;
+}
+
+.post {
+  text-decoration: none;
+}
+
+.post-img-container {
+  display: block;
+  overflow: hidden;
+}
+
+.post-img {
+  object-fit: cover;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .description .detail {
+    text-align: center;
+  }
+  .description {
+    margin: 0;
+  }
+  .separator {
+    text-align: center;
+  }
+  .indent-root {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

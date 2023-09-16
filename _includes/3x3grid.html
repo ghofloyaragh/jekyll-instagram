@@ -1,0 +1,27 @@
+{% assign n_post = data.size%}
+{% assign nrw = n_post|plus:2 %}
+{% assign row = nrw|divided_by:3 %}
+
+<div class="root">
+    <div class="indent-root">
+        <div class="content" style="width: 100%">
+            <div id="post-grid"></div>
+            {% for r in (1..row)%}
+            <div class="post-row">
+                {% for i in (0..2)%}
+                    {% assign rm=r|minus:1%}
+                    {% assign r3=rm|times:3 %}
+                    {% assign r3i = r3|plus:i %}
+                    {% assign card = data | where:"id", r3i|first %}
+                    <div class="post-obj">
+                        <a class="post" href="#">
+                            {% assign card_image = card.images|first %}
+                            <img src="{{card_image.path}}" alt="{{card_image.alt}}" class="post-img">
+                        </a>
+                    </div>
+                {%endfor%}
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</div>
