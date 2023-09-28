@@ -1,3 +1,5 @@
 collections:
   companies:
     output: true
+  cards:
+    output: true

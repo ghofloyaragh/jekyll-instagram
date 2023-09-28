@@ -58,10 +58,18 @@
 
 
 @media screen and (max-width: 600px) {
+  .card-container{
+    flex-direction: column !important;
+  }
+  #carouselExampleControlsNoTouching{
+    width: 80% !important;
+    margin-bottom: 50px;
+  }
   .header{
     flex-direction: column;
     margin-bottom: 10px;
   }
+
   .description .detail{
     text-align: center;
   }

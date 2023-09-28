@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="card-container" style="display: flex;justify-content: space-around;flex-direction: row-reverse; align-items: center; margin-top: 50px">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" style="width: 35%">
+        <div class="carousel-inner">
+            {% assign fimg = page.images|first %}
+            {% for img in page.images %}
+            <div {% if img.path== fimg.path %} class="carousel-item active" {%endif%} class="carousel-item">
+                <img class="d-block w-100" src="{{img.path}}" alt="{{img.alt}}">
+            </div>
+            {%endfor%}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev" style="background-color: black;opacity: 15%">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" style="background-color: black;opacity: 15%">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div style="display: flex;flex-direction: column;align-items: center">
+        <h2>{{page.name}}</h2>
+        <div>{{page.description}}</div>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 {% assign n_post = data.size%}
+{{n_post}}
 {% assign nrw = n_post|plus:2 %}
 {% assign row = nrw|divided_by:3 %}
-
 <div class="root">
     <div class="indent-root">
         <div class="content" style="width: 100%">
@@ -9,12 +9,15 @@
             {% for r in (1..row)%}
             <div class="post-row">
                 {% for i in (0..2)%}
+                    {% assign first_card=data|first%}
+                    {% assign initial_id = first_Card.id | plus:i%}
                     {% assign rm=r|minus:1%}
                     {% assign r3=rm|times:3 %}
                     {% assign r3i = r3|plus:i %}
-                    {% assign card = data | where:"id", r3i|first %}
+                    {% assign card = data | where:'pk', r3i|first %}
+                    {{card}}
                     <div class="post-obj">
-                        <a class="post" href="#">
+                        <a class="post" href="{{card.url}}">
                             {% assign card_image = card.images|first %}
                             <img src="{{card_image.path}}" alt="{{card_image.alt}}" class="post-img">
                         </a>
